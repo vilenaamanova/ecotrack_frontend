@@ -52,10 +52,7 @@ const Home = () => {
   };
 
   const handleSearch = async (query) => {
-    // Здесь можно добавить геокодирование (преобразование названия города в координаты)
-    // Например, с помощью API OpenWeatherMap Geocoding
-    // Пока используем заглушку
-    const coords = { lat: 55.7558, lng: 37.6176 }; // Москва
+    const coords = { lat: 55.7558, lng: 37.6176 };
     await fetchWeatherAndAirQuality(coords.lat, coords.lng);
   };
 
